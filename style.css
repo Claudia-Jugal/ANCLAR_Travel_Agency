@@ -1,0 +1,306 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-size: 120%;
+    color: white;
+    background-image: url("Images/map_back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #195f84;
+    color: #fff;
+    padding: 35px;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 70px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    
+    text-align: center;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: radial-gradient(circle, rgb(40, 135, 148) 29%, rgb(40 98 148 / 20%) 96%);
+    border-radius: 150px;
+    padding: 10%;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    
+    font-size: 120%;
+    justify-content: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+}
+
+section p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
+    color: white;
+}
+
+.places .place {
+    text-align: left;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.671);
+}
+
+section li{
+    text-align: left;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-container img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.rating {
+    margin: 10px 0;
+    color: #333;
+}
+
+footer {
+    background: #28566f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    max-width: 150px;
+    margin: 10px 0;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.contact {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(33, 156, 175);
+    padding: 10px;
+    color: white;
+    
+    
+}
+
+.contact a:hover {
+    color: red;
+    padding: 10px;
+    background-color: gray;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+    margin: 0 auto;
+}
+
+.input-field input, .input-field textarea {
+    width: 100%;
+    padding: 15px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em; 
+}
+
+button[type="submit"] {
+    background: #195f84;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background: #3a7999;
+}
+
+.containt {
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    font-size: 1em;
+    grid-gap: 0px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.box_name {
+    grid-column: 2/8;
+    font-size: 250%;
+    text-align: right;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: white;
+}
+
+.button {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 120%;
+    border-top: 8px double rgb(40, 98, 148);
+    border-bottom: 8px double rgb(40, 98, 148);
+    padding: 15%;
+}
+
+.button:hover {
+    color: #3a7999;
+    background-color: rgb(40, 98, 148);
+    padding: auto;
+}
+
+.destinations {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: (2, 50);
+    gap: 10px;
+    padding: 0px 10px 10px 0px;
+    text-align: center;
+}
+
+.left_image, .right_image {
+    background-image: radial-gradient(circle, rgb(40, 135, 148) 29%, rgb(40 98 148 / 20%) 96%);
+    border-radius: 200px;
+    padding: 10% 0%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.left_image:hover, .right_image:hover {
+    color: #3a7999;
+    background-color: rgb(40, 98, 148);
+}
+
+.where {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 250%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(8, 67, 119);
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.footer {
+    text-align: center;
+    align-items: center;
+    padding-bottom: 5%;
+    padding-top: 10%;
+}
+
+
+.weare {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: (2, 50);
+    gap: 10px;
+    padding: 0px 10px 10px 0px;
+    text-align: center;
+}
+
+
+.left_item, .right_item {
+    background-image: radial-gradient(circle, rgb(40, 135, 148) 29%, rgb(40 98 148 / 20%) 96%);
+    border-radius: 200px;
+    padding: 10% 0%;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    color: white;
+    font-size: 120%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
